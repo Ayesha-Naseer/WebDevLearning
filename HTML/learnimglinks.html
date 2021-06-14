@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Learning image links</title>
+	</head>
+	<body link = "blue" alink = "red" vlink = "purple">
+		<p>Click the image below to go to google</p>
+		<a href = "https://www.google.com.pk" target = "_blank">
+			<img src = "./images/img1.jpg" alt = "sesame street" border = "3"/>
+		</a>
+		
+		<h4>image maps</h4>
+		<p>lets you put different links in different parts of images. there are two types of image mapping. server side and client side. we can only test client side. for server side we need to have a server script running at the link provided in a tag. further info <a href = "https://www.tutorialspoint.com/html/html_image_links.htm">here</a></p>
+		<ul>
+			<li>click on duck's face to visit google search ingine</li>
+			<li>click on cookie monster's face to visit gmail</li>
+		</ul>
+		<img src = "./images/img1.jpg" alt = "sesame street"  border = "3" usemap = "#htmlmap" />
+		<map name = "htmlmap">
+			<area shape = "circle" coords = "574,156,112" href = "https://www.google.com" alt = "google" target = "_blank" />
+			<area shape = "circle" coords = "246,422,62" href = "https://mail.google.com" alt = "gmail" target = "_blank" />
+	</body>
+</html>

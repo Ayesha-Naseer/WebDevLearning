@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Learning tables in HTML</title>
+		
+	</head>
+
+	<body>
+		<p>simple without border</p>
+		<table>
+			<tr>
+				<td>row1, col 1</td>
+				<td>row1, col 2</td>
+			</tr>
+			<tr>
+				<td>row2, col 1</td>
+				<td>row2, col 2</td>
+			</tr>
+			<tr>
+				<td>row3, col 1</td>
+				<td>row3, col 2</td>
+			</tr>
+		</table>
+		<p>simple with border</p>
+		<table border = "4">
+			<!-- border in tr tag does not effect anything. the cells have same one thickness border -->
+			<tr border = "4">
+				<td>row1, col 1</td>
+				<td>row1, col 2</td>
+			</tr>
+			<tr>
+				<td>row2, col 1</td>
+				<td>row2, col 2</td>
+			</tr>
+			<tr>
+				<td>row3, col 1</td>
+				<td>row3, col 2</td>
+			</tr>
+		</table>
+		<p>testing if first row has only one cell. and rest rows have more cells. how it looks</p>
+		<table border = "1">
+			<tr>
+				<td>row1, col 1</td>
+			</tr>
+			<tr>
+				<td>row2, col 1</td>
+				<td>row2, col 2</td>
+			</tr>
+			<tr>
+				<td>row3, col 1</td>
+				<td>row3, col 2</td>
+			</tr>
+		</table>
+		<p>row and col span and padding and cell spacing and th tag</p>
+		<table border = "1" cellspacing = "3" cellpadding = "5">
+			<tr>
+				<th colspan = "2">row1, col 1</th>
+			</tr>
+			<tr>
+				<td>row2, col 1</td>
+				<td rowspan = "2">row2, col 2</td>
+			</tr>
+			<tr>
+				<td>row3, col 1</td>
+				<td>row3, col 3</td>
+			</tr>
+		</table>
+		<p>testing different sizes of tables and captions captions are deprecated in html5</p>
+		<table border = "1" height = "150" width = "400">
+			<caption>h: 150 w: 400</caption>
+			<tr>
+				<th colspan = "2">row1, col 1</th>
+			</tr>
+			<tr>
+				<td>row2, col 1</td>
+				<td>row2, col 2</td>
+			</tr>
+			<tr>
+				<td>row3, col 1</td>
+				<td>row3, col 2</td>
+			</tr>
+		</table>
+		<table border = "1" height = "150" width = "400">
+			<caption>h: 150 w: 400 with one more row</caption>
+			<tr>
+				<th colspan = "2">row1, col 1</th>
+			</tr>
+			<tr>
+				<td>row2, col 1</td>
+				<td>row2, col 2</td>
+			</tr>
+			<tr>
+				<td>row3, col 1</td>
+				<td>row3, col 2</td>
+			</tr>
+			<tr>
+				<td>row4, col 1</td>
+				<td>row4, col 2</td>
+			</tr>
+		</table>
+		<table border = "1" height = "150" width = "100%">
+			<caption>h: 150 w: 100% with one more row of its own h and w</caption>
+			<tr>
+				<th colspan = "2">row1, col 1</th>
+			</tr>
+			<tr>
+				<td>row2, col 1</td>
+				<td>row2, col 2</td>
+			</tr>
+			<tr>
+				<td>row3, col 1</td>
+				<td>row3, col 2</td>
+			</tr>
+			<!-- width of table tagover rides this individual width of 400 -->
+			<tr height = "75" width = "400">
+				<td>row4, col 1</td>
+				<td>row4, col 2</td>
+			</tr>
+		</table>
+		<p>backgrounds. depracated in html5</p>
+		<table border = "1" bordercolor = "green" bgcolor = "yellow">
+			<caption>bordercolor and bgcolor attribute</caption>
+			<tr>
+				<th colspan = "2">row1, col 1</th>
+			</tr>
+			<tr>
+				<td>row2, col 1</td>
+				<td>row2, col 2</td>
+			</tr>
+			<tr>
+				<td>row3, col 1</td>
+				<td>row3, col 2</td>
+			</tr>
+			<tr>
+				<td>row4, col 1</td>
+				<td>row4, col 2</td>
+			</tr>
+		</table>
+		<table border = "1" height = "600" width = "100%" background = "./images/img1.jpg">
+			<caption>background attribute <strong>is working but only that amount of pic is sowing which is within table border</strong></caption>
+			<tr>
+				<th colspan = "2">row1, col 1</th>
+			</tr>
+			<tr>
+				<td>row2, col 1</td>
+				<td>row2, col 2</td>
+			</tr>
+			<tr>
+				<td>row3, col 1</td>
+				<td>row3, col 2</td>
+			</tr>
+			<tr>
+				<td>row4, col 1</td>
+				<td>row4, col 2</td>
+			</tr>		
+		</table>
+		<p color = "green">now is the final thngto test: <em>dividing table into header footer and body</em></p>
+		<table border = "2" height = "150" width = "400">
+			<thead>
+				<th colspan = "2">row1, col 1</th>
+			</thead>
+			<tfoot>
+				<td colspan = "2">This is footer</td>
+			</tfoot>
+			<tbody>
+				<tr>
+					<td>row2, col 1</td>
+					<td>row2, col 2</td>
+				</tr>
+				<tr>
+					<td>row3, col 1</td>
+					<td>row3, col 2</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>

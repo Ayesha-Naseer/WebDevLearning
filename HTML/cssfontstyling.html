@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Font options in css</title>
+		<style>
+			.bolder {
+			font-weight:bolder;
+			}
+			.bold {
+			font-weight: bold;
+			}
+			.lighter { font-weight:lighter;}
+		</style>
+	</head>
+	<body style = "font-weight:400;">
+		<p>without any font weight</p>
+		<p class = "bolder">class bolder applied</p>
+		<p>without any weight</p>
+		<p style = "font-weight:bolder;">inline bolder applied</p>
+		<p>without any weight</p>
+		<p class = "lighter">class lighter applied</p>
+		<h3><u>concl:</u></h3>
+		<p>lighter only works when defult body or div has a boder font</p>
+		<div style = "font: 1pc bold;">
+			<p>normal font of div is 1pc that is 12pts</p>
+			<p style = "font-size:larger;">is this larger?how much larger?<span style="font-size:14pt;"> this is 14pts</span></p>
+			<p style="font-size:smaller;">is this smaller?<span style = "font-size:10;">may be10pts?</span></p>	
+		</div>
+		<div style = "font: 12pt bold;">
+			<p>normal font of div is 12pts</p>
+			<p style = "font-size:larger;">is this larger?how much larger?<span style="font-size:14pt;"> this is 14pts</span></p>
+			<p style="font-size:smaller;">is this smaller?<span style = "font-size:10;">may be10pts?</span></p>	
+		</div>
+		<h3><u>concl:</u></h3>
+		<p>smaller and larger fonts change that font by 2 pts compared to parent tag's font. and not the previous sinling tag.</p>
+	</body>
+
+</html>
